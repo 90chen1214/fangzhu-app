@@ -1,0 +1,59 @@
+{
+    "name" : "房助",
+    "appid" : "__UNI__DA0524A",
+    "description" : "房产经纪人 AI 助手——AI 文案工厂、联合推荐决策、带看跟客",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {},
+        "distribute" : {
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>"
+                ],
+                "minSdkVersion" : 21
+            },
+            "ios" : {
+                "dSYMs" : false,
+                "idfa" : false,
+                "privacyDescription" : {
+                    "NSCameraUsageDescription" : "拍摄房源实拍图用于生成营销文案",
+                    "NSMicrophoneUsageDescription" : "带看过程中语音记录客户需求",
+                    "NSLocationUsageDescription" : "定位附近房源与带看路线规划"
+                }
+            },
+            "sdkConfigs" : {}
+        },
+        "screenOrientation" : [ "portrait-primary" ]
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "h5" : {
+        "title" : "房助",
+        "router" : {
+            "mode" : "hash",
+            "base" : "./"
+        }
+    },
+    "vueVersion" : "3"
+}

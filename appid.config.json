@@ -1,0 +1,33 @@
+{
+  "_说明": "把下面的值替换成你自己的 DCloud AppID，然后同步到 src/manifest.json 的 appid 字段",
+  "_获取方式": "HBuilderX 菜单 工具 → 获取 AppID（需先登录 DCloud 账号）",
+  "_当前占位值": "__UNI__FZ2026",
+
+  "app-plus": {
+    "distribute": {
+      "android": {
+        "minSdkVersion": 21,
+        "targetSdkVersion": 33,
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+          "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+          "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+          "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>"
+        ]
+      }
+    }
+  },
+
+  "Android基座运行自检清单": [
+    "1. 手机：设置 → 关于手机 → 连续点击版本号开启开发者模式",
+    "2. 手机：设置 → 开发者选项 → 打开 USB 调试",
+    "3. USB 连接电脑，手机弹出「允许 USB 调试」→ 点允许",
+    "4. 电脑：HBuilderX 菜单 运行 → 运行到手机或模拟器 → 运行到 Android App 基座",
+    "5. 首次会提示安装「HBuilderX 标准基座」，点确定",
+    "6. 等待编译完成后，手机桌面出现「HBuilder」图标，点开即为房助"
+  ]
+}

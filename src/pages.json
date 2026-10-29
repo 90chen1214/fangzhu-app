@@ -1,0 +1,105 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^fz-(.*)": "@/components/fz-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "房助"
+      }
+    },
+    {
+      "path": "pages/decision/decision",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "联合推荐决策"
+      }
+    },
+    {
+      "path": "pages/copywriter/copywriter",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "AI 文案工厂"
+      }
+    },
+    {
+      "path": "pages/viewing/viewing",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "带看跟客"
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "客户画像"
+      }
+    },
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "房助",
+    "navigationBarBackgroundColor": "#F9F9F9",
+    "backgroundColor": "#F9F9F9"
+  },
+  "tabBar": {
+    "color": "#9AA3AF",
+    "selectedColor": "#014DB2",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "height": "54px",
+    "fontSize": "10px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "工作台",
+        "iconPath": "static/tabbar/home-idle.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "客户",
+        "iconPath": "static/tabbar/user-idle.png",
+        "selectedIconPath": "static/tabbar/user-active.png"
+      },
+      {
+        "pagePath": "pages/decision/decision",
+        "text": "推荐",
+        "iconPath": "static/tabbar/star-idle.png",
+        "selectedIconPath": "static/tabbar/star-active.png"
+      },
+      {
+        "pagePath": "pages/viewing/viewing",
+        "text": "带看",
+        "iconPath": "static/tabbar/pin-idle.png",
+        "selectedIconPath": "static/tabbar/pin-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/tabbar/me-idle.png",
+        "selectedIconPath": "static/tabbar/me-active.png"
+      }
+    ]
+  }
+}
